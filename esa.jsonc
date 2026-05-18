@@ -1,0 +1,6 @@
+
+{
+  "assets": "./",  // or "./dist", "./public" - where your static files are
+  "installCommand": "",  // leave empty if no dependencies
+  "buildCommand": ""     // leave empty if no build step needed
+}
