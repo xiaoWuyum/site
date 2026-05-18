@@ -1,6 +1,13 @@
-
 {
-  "assets": "./",  // or "./dist", "./public" - where your static files are
-  "installCommand": "",  // leave empty if no dependencies
-  "buildCommand": ""     // leave empty if no build step needed
+  // 静态资源配置（核心）
+  "assets": {
+    // 指向你的静态文件目录，"." 代表根目录
+    "directory": ".",
+    // 因为你只有一个 index.html，推荐使用单页应用模式
+    // 这样访问任何不存在的路径都会回到 index.html，避免 404
+    "notFoundStrategy": "singlePageApplication"
+  },
+  // 因为没有构建步骤，这两个命令设为空字符串以跳过
+  "installCommand": "",
+  "buildCommand": ""
 }
