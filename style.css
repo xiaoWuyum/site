@@ -147,24 +147,16 @@ small, .text-caption {
     color: #fff;
 }
 
-.head-hero-small {
-    font-size: var(--type-caption);
-    letter-spacing: 0.28em;
-    opacity: 0.9;
+.head-hero-brand-logo {
+    flex: 0 0 auto;
+    margin-left: -0.25rem;
 }
 
-.head-hero-name {
-    font-size: var(--type-title);
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    line-height: 0.95;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
-}
-
-.head-hero-by {
-    font-size: var(--type-caption);
-    letter-spacing: 0.32em;
-    opacity: 0.85;
+.head-hero-brand-img {
+    display: block;
+    width: min(100%, 140px);
+    height: auto;
+    filter: brightness(0) invert(1);
 }
 
 .head-hero-copy {
@@ -2189,6 +2181,14 @@ small, .text-caption {
 @media (max-width: 768px) {
     .head-hero-media img {
         object-position: 28% top;
+    }
+
+    .head-hero-brand-logo {
+        margin-left: -0.15rem;
+    }
+
+    .head-hero-brand-img {
+        width: min(100%, 120px);
     }
 
     .poster-shell {
